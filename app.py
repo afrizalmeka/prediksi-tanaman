@@ -27,15 +27,6 @@ def predict():
     data.append(float(kelembaban))
     data.append(float(phtanah))
     data.append(float(curahhujan))
-    # if sex == 'Laki-laki':
-    #     data.extend([0, 1])
-    # else:
-    #     data.extend([1, 0])
-
-    # if smoker == 'Ya':
-    #     data.extend([0, 1])
-    # else:
-    #     data.extend([1, 0])
     
     nama = {0 : 'Tanaman Padi', 1 : 'Tanaman Jagung', 2 : 'Tanaman Kacang Chickpea', 3 : 'Tanaman Kacang Merah', 4 : 'Tanaman Kacang Polong',
         5 : 'Tanaman Ngengat', 6 : 'Tanaman Kacang Hijau', 7 : 'Tanaman Black Gram', 8 : 'Tanaman Lentil', 9 : 'Tanaman Buah Delima',
@@ -44,9 +35,6 @@ def predict():
 
     prediction = model.predict([data])
     output = nama[prediction[0]]
-
-    # prediction2 = model.predict([data])
-    # output2 = nama[prediction2[0]]
 
     return render_template('index.html', hasil_prediksi_tanaman=output, nitrogen=nitrogen, fosfor=fosfor, kalium=kalium, suhu=suhu, kelembaban=kelembaban, phtanah=phtanah, curahhujan=curahhujan)
 
