@@ -28,6 +28,7 @@ def predict():
     data.append(float(phtanah))
     data.append(float(curahhujan))
     
+    #inisialisasi list nama tanaman
     nama = {0 : 'Tanaman Padi', 1 : 'Tanaman Jagung', 2 : 'Tanaman Kacang Chickpea', 3 : 'Tanaman Kacang Merah', 4 : 'Tanaman Kacang Polong',
         5 : 'Tanaman Ngengat', 6 : 'Tanaman Kacang Hijau', 7 : 'Tanaman Black Gram', 8 : 'Tanaman Lentil', 9 : 'Tanaman Buah Delima',
         10 : 'Tanaman Buah Pisang', 11 : 'Tanaman Buah Mangga', 12 : 'Tanaman Buah Anggur', 13 : 'Tanaman Buah Semangka', 14 : 'Tanaman Buan Melon', 15 : 'Tanaman Buah Apel',
